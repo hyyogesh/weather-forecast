@@ -17,7 +17,11 @@ public interface WeatherService {
 
 	WeatherReading getCityWeather(String city);
 
-	List<WeatherReading> getWeatherProp(String city, String weatherProp);
+	WeatherReading getWeatherProp(String city, String weatherProp);
+
+	WeatherReading getHourlyCityWeather(String city);
+
+	WeatherReading getDailyCityWeather(String city);
 
 
 }
